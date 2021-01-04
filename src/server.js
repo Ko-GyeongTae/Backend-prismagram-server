@@ -1,1 +1,6 @@
-console.log("Hello Test Server");
+require("dotenv").config();
+import {GraphQLServer}from"graphql-yoga";
+
+const server = new GraphQLServer({
+
+});

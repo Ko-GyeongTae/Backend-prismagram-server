@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-node": "^0.0.1-security",
+    "dotenv": "^8.2.0",
     "graphql-yoga": "^1.18.3"
   },
   "devDependencies": {

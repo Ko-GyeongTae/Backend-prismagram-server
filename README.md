@@ -9,7 +9,9 @@ Instargram clone with Express &amp; Prisma &amp; React &amp; React Native
 - [ ] Search by location
 - [ ] See user profile
 - [ ] Follow / Unfollow User
+- [ ] See the full photo
 - [ ] Edit my profile
+- [O] Create account 
 - [ ] Upload a photos
 - [ ] Edit the photo (Delete)
 - [ ] See the feed

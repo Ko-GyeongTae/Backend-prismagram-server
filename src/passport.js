@@ -3,11 +3,11 @@ import path from "path";
 dotenv.config({ path: path.resolve(__dirname, ".env")});
 
 import passport from "passport";
-import JwtStrategy from "passport-jwt";
+import {Strategy, ExtractJwt} from "passport-jwt";
 
 const jwtOptions = {
-    jwtFromRequest: JwtStrategy.ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secret: process.env.JWT_SECRET
+    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+    secretOrKey: process.env.JWT_SECRET
 };
 
 const verifyUser = async(payload, done) => {
@@ -18,7 +18,9 @@ const verifyUser = async(payload, done) => {
         } else {
             return done(null, false);
         }
+    } catch(error) {
+        return done(error, false);
     }
 }
 
-passport.use(new JwtStrategy(jwtOptions, verifyUser));
+passport.use(new Strategy(jwtOptions, verifyUser));

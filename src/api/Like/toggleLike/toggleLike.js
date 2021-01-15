@@ -22,9 +22,9 @@ export default {
                 ]
             }
             try{
-                const existingLike = await prisma.$exists.like({filterOptions});
+                const existingLike = await prisma.$exists.like(filterOptions);
                 if(existingLike){
-                    await prisma.deleteManyLikes({filterOptions});
+                    await prisma.deleteManyLikes(filterOptions);
                 } else {
                     await prisma.createLike({
                         user:{

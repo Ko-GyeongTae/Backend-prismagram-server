@@ -17,11 +17,11 @@ type User {
 type Post {
   id: ID! @id
   caption: String!
-  comments: [Comment!]!
+  user: User!
   files: [File!]!
   likes: [Like!]!
   location: String
-  user: User!
+  comments: [Comment!]!
 }
 
 type Like {

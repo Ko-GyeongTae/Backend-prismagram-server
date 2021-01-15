@@ -6,7 +6,7 @@ Instargram clone with Express &amp; Prisma &amp; React &amp; React Native
 - [O] Request Secret
 - [O] Confirm Secret (Login)
 - [O] Like / Unlike a photo
-- [ ] Comment on a photo
+- [O] Comment on a photo
 - [ ] Search by user
 - [ ] Search by location
 - [ ] See user profile

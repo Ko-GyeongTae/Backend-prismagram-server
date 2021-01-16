@@ -14,7 +14,7 @@ Instargram clone with Express &amp; Prisma &amp; React &amp; React Native
 - [O] Edit my profile
 - [O] See user profile
 - [O] See MY profile
-- [ ] See the full photo
+- [O] See the full photo
 - [ ] Upload a photos
 - [ ] Edit the photo (Delete)
 - [ ] See the feed

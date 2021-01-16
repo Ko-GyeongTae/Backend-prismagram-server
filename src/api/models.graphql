@@ -58,6 +58,7 @@ type Message {
 }
 
 type UserProfile {
+    id: ID!
     user: User!
     posts: [Post!]!
 }

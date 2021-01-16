@@ -18,6 +18,7 @@ Instargram clone with Express &amp; Prisma &amp; React &amp; React Native
 - [ ] Upload a photos
 - [ ] Edit the photo (Delete)
 - [ ] See the feed
+- [ ] Send private DM
 
 ### If you want send secret code to email
 * Delete User/requestSecret/requestSecret.js -> throw Error

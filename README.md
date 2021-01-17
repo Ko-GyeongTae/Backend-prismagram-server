@@ -20,7 +20,7 @@ Instargram clone with Express &amp; Prisma &amp; React &amp; React Native
 - [x] See the feed
 - [x] Send private Message
 - [x] See rooms
-- [ ] See room
+- [x] See room
 - [ ] Receive Message (Realtime)
 
 ### If you want send secret code to email

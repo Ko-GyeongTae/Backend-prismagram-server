@@ -21,7 +21,7 @@ Instargram clone with Express &amp; Prisma &amp; React &amp; React Native
 - [x] Send private Message
 - [x] See rooms
 - [x] See room
-- [ ] Receive Message (Realtime)
+- [x] Receive Message (Realtime)
 
 ### If you want send secret code to email
 * Delete User/requestSecret/requestSecret.js -> throw Error

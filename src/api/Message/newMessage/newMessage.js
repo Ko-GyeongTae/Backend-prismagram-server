@@ -16,8 +16,9 @@ export default {
               },
             },
           ],
-        });
+        }).node();
       },
+      resolve: payload => payload
     },
   },
 };

@@ -13,8 +13,8 @@ type User {
   comments: [Comment!]! 
   rooms: [Room!]!
   loginSecret: String
-  createdAt: DateTime! 
-  updatedAt: DateTime 
+  createdAt: String! 
+  updatedAt: String 
 }
 type Post {
   id: ID! 
@@ -24,16 +24,16 @@ type Post {
   files: [File!]!
   likes: [Like!]! 
   comments: [Comment!]! 
-  createdAt: DateTime! 
-  updatedAt: DateTime 
+  createdAt: String! 
+  updatedAt: String 
 }
 
 type Like {
   id: ID! 
   user: User 
   post: Post 
-  createdAt: DateTime! 
-  updatedAt: DateTime 
+  createdAt: String! 
+  updatedAt: String 
 }
 
 type Comment {
@@ -41,24 +41,24 @@ type Comment {
   text: String!
   user: User 
   post: Post 
-  createdAt: DateTime! 
-  updatedAt: DateTime 
+  createdAt: String! 
+  updatedAt: String 
 }
 
 type File {
   id: ID! 
   url: String!
   post: Post 
-  createdAt: DateTime! 
-  updatedAt: DateTime 
+  createdAt: String! 
+  updatedAt: String 
 }
 
 type Room {
   id: ID! 
   participants: [User!]!
   messages: [Message!]!
-  createdAt: DateTime! 
-  updatedAt: DateTime   
+  createdAt: String! 
+  updatedAt: String   
 }
 type Message {
   id: ID! 
@@ -66,6 +66,6 @@ type Message {
   from: User! 
   to: User! 
   room: Room!
-  createdAt: DateTime! 
-  updatedAt: DateTime 
+  createdAt: String! 
+  updatedAt: String 
 }

@@ -5,6 +5,7 @@ export default {
         seeFeed: async(_, __, {request, isAuthenticated}) => {
             console.log("인증필요");
             console.log(request.user);
+            console.log(isAuthenticated(request));
             isAuthenticated(request);
             const { user } = request;
             const following = await prisma

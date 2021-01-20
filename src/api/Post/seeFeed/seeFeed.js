@@ -3,6 +3,8 @@ import { prisma } from "../../../../generated/prisma-client";
 export default {
     Query: {
         seeFeed: async(_, __, {request, isAuthenticated}) => {
+            console.log("인증필요");
+            console.log(request.user);
             isAuthenticated(request);
             const { user } = request;
             const following = await prisma

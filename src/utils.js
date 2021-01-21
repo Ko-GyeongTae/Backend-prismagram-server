@@ -20,6 +20,7 @@ const sendMail = (email) => {
 };
 
 export const sendSecretMail = (adress, secret) => {
+  console.log(secret);
   const email = {
     from: "instagram@prismagram.com",
     to: adress,

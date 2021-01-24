@@ -22,7 +22,7 @@ const sendMail = (email) => {
 export const sendSecretMail = (adress, secret) => {
   console.log(secret);
   const email = {
-    from: "instagram@prismagram.com",
+    from: "Mailer@prismagram.com",
     to: adress,
     subject: "🔒Login Secret for Prismagram🔒",
     html: `Hello! Your login secret is <strong>${secret}</strong><br/>Copy paste on the app/website to log in`
